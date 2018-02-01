@@ -16,7 +16,7 @@ h1 {
 
 header {
     background-color: #a3bb49; 
-    padding: .5rem
+    padding: .5rem;
 }
 
 main {
@@ -41,4 +41,5 @@ footer {
 
 .profile {
     box-shadow: .25rem .25rem .25rem #ccaabb;
-    border: 1px solid #777777;}
+    border: 1px solid #777777;
+}

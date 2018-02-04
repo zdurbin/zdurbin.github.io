@@ -36,10 +36,12 @@ header, main, footer {
     max-width: 640px;
 }
 
-a{
+a {
     color:#d7d7d7;
 }
-
+a visited{
+    color: #d7d7d7;
+}
 header, footer, footer a {
     text-align: center;
     background-color: lightslategray;

@@ -27,12 +27,10 @@ h2 {
 li{
     font-size: 1.3em;
     letter-spacing: .075em;
-    color: #d7d7d7;    
-    
+    color: white;  
 }
-
 li a:link{
-    color:#d7d7d7;
+    color: #d7d7d7;
 }
 
 li a:visited{

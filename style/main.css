@@ -28,6 +28,7 @@ li{
     font-size: 1.3em;
     letter-spacing: .075em;
     color: #d7d7d7;    
+    
 }
 
 li a:link{
@@ -41,7 +42,8 @@ li a:visited{
 li a:hover{
     color: darkgrey;
     font-style: italic;
-
+    font-size: 1.1em;
+    letter-spacing: .030em;
 }
 
 header, main, footer {
@@ -57,12 +59,18 @@ header, footer, footer a {
     color: whitesmoke;
 }
 
+footer a:hover{
+    font-style: italic;
+    font-size: 1.3em;
+}
+
 header img {
     width: 200px;
     height: auto;
-    float: right;
+    float: right; 
 }
 
 footer {
-    font-size: .95em;
+    font-size: 1em;
+    
 }

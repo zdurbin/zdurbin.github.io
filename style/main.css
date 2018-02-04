@@ -30,23 +30,27 @@ li{
     color: #d7d7d7;    
 }
 
+li a:link{
+    color:#d7d7d7;
+}
+
+li a:visited{
+    color: #E20049;
+}
+
+li a:hover{
+    color: crimson;
+    font-style: italic;
+
+}
+
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 640px;
 }
 
-a {
-    color:#d7d7d7;
-}
-a visited{
-    color: #d7d7d7;
-}
 
-a hover{
-    color: darkgray;
-    font-style: italic;
-}
 header, footer, footer a {
     text-align: center;
     background-color: lightslategray;

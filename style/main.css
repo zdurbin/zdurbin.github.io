@@ -26,13 +26,18 @@ h2 {
 }
 li{
     font-size: 1.3em;
-    letter-spacing: .075em
+    letter-spacing: .075em;
+    color: #d7d7d7;    
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 640px;
+}
+
+a{
+    color:#d7d7d7;
 }
 
 header, footer, footer a {

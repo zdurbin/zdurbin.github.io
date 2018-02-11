@@ -28,7 +28,7 @@
    
 }
 .handle{
-    width: 100%
+    width: 100%;
     text-align: left;
     box-sizing: border-box;
     padding: 10px;
@@ -129,7 +129,7 @@ a:active{
 
 .forecast{
     
-    display: inline
+    display: inline;
     width: 65%;
     margin: auto;
     text-align: left;

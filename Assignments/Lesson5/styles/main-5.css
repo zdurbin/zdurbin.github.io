@@ -134,3 +134,21 @@ td{
     border: 1px #d7d7d7 solid;
     padding: 10px;
 }
+
+article{
+    width: 75%;
+    text-align:justify;
+}
+
+article h3{
+    text-align: center;
+}
+
+aside{
+    text-align: center;
+    font-size: .70em;
+    line-height: .5em;
+}
+.footer-bar{
+    text-align: center;
+}

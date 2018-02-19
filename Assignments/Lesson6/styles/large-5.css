@@ -1,10 +1,61 @@
-@media screen and (min-width: 962px ){
+@media screen and (min-width: 64rem ){
     .forecast{
         display: block;
     }
-        .day{
+    
+    .day{
         display: block;
     }
     
+    figure img{
+        width:100%;
+        height: 100%;
+    }
+    
+    article img{
+        margin: 100px;
+        width:95%;
+        height:95%;
+    }
+    
+    .handle{
+        display: none;
+    }
+    
+    nav ul.hide{
+        display: block;
+    }
+    
+    nav ul li{
+       display: inline-block;
+        clear:both;
+    }
+    
+    nav button {
+        display: none; 
+    }
+    
+    nav ul{
+        margin-left: 2%;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem; 
+        color: #e7e7e7;
+    }
+    
+    
+    table{
+        display: block;
+        width: auto;
         
     }
+    main h2{
+        padding-top: 100px;
+        width: 100%;
+    }
+}

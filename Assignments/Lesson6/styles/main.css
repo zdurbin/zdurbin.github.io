@@ -26,11 +26,13 @@
         padding: 0;
         margin: 0;
     }
+    
     nav ul li a{
         display: block;
         padding: .8rem 2%;
         color: #621402;
-        border-top: 1px solid rgba(0,0,0,0.3)
+        width: 100%;
+        margin-right: 80px;
     }
     
     .forecast{
@@ -104,7 +106,7 @@ h1, h2, h3, h4, h5, h6{
 /*navigation*/
 
 nav{
-    display: inline;
+    
     margin-top: 0;
     padding-top: 0;
 }
@@ -118,6 +120,7 @@ nav ul li{
 }
 
 nav ul li a{
+    display: inline-block;
     text-decoration: none; 
     display: block;
     color: #e7e7e7;
@@ -131,7 +134,7 @@ nav ul li a:hover{
 
 nav ul li.active a{
     background-color: rgba(0,0,0,0.2);
-    border: 1px solid #e7e7e7;
+    
 }
 
 nav ul.hide {
@@ -150,9 +153,11 @@ nav ul.hide {
     font-style: italic;
 }
 
+}
 .summery{
-    text-align: left;
-    width: 25%
+    text-align: center;
+    width: 100%;
+    margin: auto;
 }
 
 .day{
@@ -164,15 +169,15 @@ nav ul.hide {
 .forecast{
     
     display: inline;
-    width: 65%;
+    width: 100%;
     margin: auto;
-    text-align: left;
+    text-align: center;
     
 }
 
 table{
     text-align: center;
-    border: 1px #d7d7d7 solid;
+    
 }
 
 th{
@@ -220,6 +225,13 @@ img{
     width:100%;
     margin:auto;
     align-content: center
+}
+
+.container{
+    padding-bottom: 20px;
+}
+.containerOne{
+    border-bottom: 1px solid #e7e7e7;
 }
 
 /* non collapse code */

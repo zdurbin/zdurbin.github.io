@@ -36,15 +36,16 @@
     }
     
     nav ul{
-        margin-left: 2%;
+        width: 100%;
         margin-top: 0;
-        padding: 0;
+        padding-right: 10px;
     }
     
     nav ul li a{
-        border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
-        padding: .6rem 1rem; 
+        margin: 3px;
+        padding: 0; 
+        width: 100%;
+        margin-right: 60px;
         color: #e7e7e7;
     }
     

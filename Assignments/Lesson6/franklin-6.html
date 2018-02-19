@@ -16,7 +16,7 @@
         <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
         <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
     </head>
-    <body>
+    <body onLoad = "renderTime();">
         <header class="clearfix">
             <img src="images/logo1.png" alt="The site logo">
             <h1 class="heading">Weather Adventures</h1>
@@ -117,11 +117,12 @@
                     <p>(999) 999-9999</p>
                     <p><a href="contact@theurl.com">contact@theurl.com</a></p>
                 </aside>
-                    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | <span id="currentdate">Current Date Placeholder</span></p>
+              <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p><div id="clockDisplay"></div>
+
           </footer>
 
           <script src="scripts/hamburger.js"></script>
-          <script src="scripts/currentdate.js"></script>
+          <script type= "text/javascript" src="scripts/currentdate.js"></script>
 
         </body>
 </html>

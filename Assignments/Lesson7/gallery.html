@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
@@ -16,7 +16,7 @@
         <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
         <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
     </head>
-    <body onLoad = "renderTime();" "doWindChill">
+    <body onLoad = "renderTime();">
         <header>
             <img src="images/logo1.png" alt="The site logo">
             <h1 class="heading">Weather Adventures</h1>
@@ -26,37 +26,63 @@
   <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776; Menu</button>
-                <ul id="primaryNav" class="hide">
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#" >Franklin</a></li>
-                    <li><a href="#">Greenville</a></li>
-                    <li><a href="#">Springfield</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-7.html" >Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li class= "active"><a href="gallery.html" >Gallery</a></li>
+            </ul>
             
         </nav>
     
         <main>
-	  
+            
+            <div id= "grid">
+                <figure>
+                    <img src="images/weather1.jpeg" alt="sunny day with a rainbow">
+                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/weather2.jpeg" alt="Sunny day">
+                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/weather3.jpeg" alt="lightning">
+                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/weather4.jpeg" alt="Rainy day">
+                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/weather5.jpeg" alt="Storm clouds">
+                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/weather6.jpeg" alt="man shoveling snow">
+                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
+                </figure>
+	           
+            </div>
+        </main>
 
-          </main>
+        <footer>
+            <aside>
+                <p>Weather Adventures</p>
+                <p>123 Main St.</p>
+                <p>Franklin, MU 83454</p>
+                <p>(999) 999-9999</p>
+                <p><a href="contact@theurl.com">contact@theurl.com</a></p>
+            </aside>
+                <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p><div id="clockDisplay" class="container"></div>
 
-          <footer>
-                <aside>
-                    <p>Weather Adventures</p>
-                    <p>123 Main St.</p>
-                    <p>Franklin, MU 83454</p>
-                    <p>(999) 999-9999</p>
-                    <p><a href="contact@theurl.com">contact@theurl.com</a></p>
-                </aside>
-              <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p><div id="clockDisplay" class="container"></div>
-
-          </footer>
+        </footer>
 
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/windchill.js"></script>
         
-        </body>
+    </body>
 </html>

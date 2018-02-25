@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+@media screen and (max-width: 640px){
+
+/*header*/
+    header{
+       display: flex;
+        flex-flow: wrap;
+    }
+    
+    header img{
+       flex-shrink: 1;
+    }
+    
+    .heading{
+       flex-shrink: 2;
+    }
+/*Navigation*/
+    nav button{
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #e7e7e7
+    }
+    
+    nav ul.hide {
+    display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li a{
+        flex: 1 1 0;
+        color: #621402;
+    }
+    
+    .forecast{
+    display: none;  
+    }
+    
+    .day{
+        display: none;
+    }
+    
+    table{
+        display: none;
+    
+    }
+
+    
+    
+}
+
+/*true for all*/
+/*main*/
+body {
+	background-color: #621402;
+	max-width: 75%;
+	margin: auto;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+    color: #d7d7d7;
+	}
+/*header*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.heading{
+    flex: 2 1 0;
+    font-size: 5rem;
+    max-width: 75%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+        
+}
+.subheading{
+    color: #d7d7d7;
+    font-size: 1.5em;
+    font-style: italic;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-flow: nowrap;
+    flex: auto;
+    min-width: 100%;
+    margin-bottom: 20px
+}
+        
+header img{
+    flex: 1 1 1;
+    max-height: 25%;
+    max-width: 25%;        
+}
+
+/*font style*/
+h1{
+    font-size: 5em;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Jim Nightshade', cursive;
+	color: #d7d7d7;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/*navigation*/
+
+nav{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav ul li{
+    background-color: #621402
+    text-decoration: none;
+    overflow: hidden;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+nav ul li a{
+    text-align: center;
+    text-decoration: none; 
+    color: #e7e7e7;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;    
+}
+
+nav ul li.active{
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+nav ul.hide {
+    display: none;
+}
+/*content*/
+
+.city{
+    text-decoration: underline;
+    font-size: 1.9em;
+    font-style: italic;
+}
+
+
+}
+.summery{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.day{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.forecast{
+    
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+table{
+    justify-content: center;
+    min-width: 100%;
+}
+
+th{
+    border: 1px #d7d7d7 solid;
+}
+
+td{
+    border: 1px #d7d7d7 solid;
+}
+
+tr{
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+article{
+    width: 100%;
+    text-align:justify;  
+}
+
+article img{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+article h3{
+    text-align: center;
+    padding: 0;
+    margin: 2% 0 0 0;
+}
+
+aside{
+    text-align: center;
+    font-size: .70em;
+    line-height: .5em;
+}
+
+.footer-bar{
+    text-align: center;
+}
+
+picture img{
+    width:auto;
+}
+
+img{
+    width:100%;
+    margin:auto;
+    align-content: center
+}
+
+.container{
+    padding-bottom: 20px;
+}
+.containerOne{
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* non collapse code */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+

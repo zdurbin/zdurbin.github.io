@@ -3,8 +3,8 @@
 table{
     background-color:#e7f0ed;
     font-family: 'ubuntu', sans-serif;
-    border: 1px solid black;
-    box-shadow: 10px black;
+    border: 1px solid rgba(0 0 0 25);
+    box-shadow: 5px 5px 15px #628ca6;
     text-align: center;
 }
 

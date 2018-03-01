@@ -1,0 +1,75 @@
+@media screen and (min-width: 64rem ){
+    .forecast{
+        display: block;
+    }
+    
+    .day{
+        display: block;
+    }
+    
+    figure img{
+        width:100%;
+        height: 100%;
+    }
+    
+    article img{
+        margin: 100px;
+        width:95%;
+        height:95%;
+    }
+    
+    .handle{
+        display: none;
+    }
+    
+    nav ul.hide{
+        display: flex;
+    }
+    
+    nav ul li{
+        flex: 1 1 0;
+        clear:both;
+    }
+    
+    nav button {
+        display: none; 
+    }
+    
+    nav ul{
+        display: flex;
+        align-content: space-around;
+        margin-top: 0;
+        padding-right: 10px;
+        text-align: center;
+    }
+    
+    nav ul li a{
+        text-align: center;
+        margin: 3px;
+        padding: 0; 
+        margin-right: 60px;
+        color: #e7e7e7;
+    }
+        
+    article img{
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+    main h2{
+        padding-top: 100px;
+        width: 100%;
+    }
+    
+    #grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+        
+}
+    figure:hover{
+    box-shadow: 5px 5px 10px black;  
+}
+    
+}

@@ -19,6 +19,11 @@
     <!-- medium/tablet views -->
     <link href="styles/large-5.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
+    <script>
+        function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+    </script>
 </head>
 
 <body onLoad="renderTime();">
@@ -48,14 +53,16 @@
                 <legend><span>Personal Information</span></legend>
                 <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
                 <label><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@carrier.com" required></label>
-                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235556785" pattern="[0-9]{10,20}" required></label>
-                <label><span>Zip Code:</span><input name="zipcode" type="text" value="" placeholder="5-Digit Zip Code" pattern="[0-9]{5}" required></label>
+                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235556785" pattern="[0-9]{10,20}"></label>
+                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="5-Digit Zip Code" pattern="[0-9]{5}" required></label>
+                <p class="info">* Required Field</p>
             </fieldset>
+            
 
             <fieldset>
                 <legend><span>Storm Information</span></legend>
                 <label><span>Storm Date:</span><input name="date" type="date" required></label>
-                <span>Storm Type:</span><input name="storm" type="text" list="storms" required>
+                <span>Storm Type:</span><input name="storm" type="text" list="storms" placeholder="Weather Anomaly" required>
                 <datalist id="storms">
                         <option value="flash flood"></option>
                         <option value="hail"></option>
@@ -63,7 +70,9 @@
                         <option value="thunderstorm"></option>
                         <option value="tornado"></option>
                     </datalist>
-                <label><span>Storm Severity:</span><input name="severity" type="text" value="" placeholder="Severity 1-low - 10-high" pattern="[1-10]{1,2}" required></label>
+                <label><span>Storm Severity:Rating (1 to 10)</span></label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
                 <label for="location"><span>Storm Region:</span></label>
                 <select name="home-location" id="location" required>
                         <option disabled selected value>Select Region</option>
@@ -72,13 +81,16 @@
                         <option value="Springfield">Springfield</option>
                 </select>
                 <label><span>User In-danger Level:</span></label>
-                <input name="danger" type="radio" value="" required>yes
-                <input name="danger" type="radio" value="" required>maybe
-                <input name="danger" type="radio" value="" required>no
-                <label><span>Additonal Information:</span><input name="additional-info" type="text" value="" placeholder="Please provide any additonal information here...." pattern="[0-9a-zA-Z -._]{0,10000}"></label>
+                <input name="danger" type="radio" value="" required class="danger">yes
+                <input name="danger" type="radio" value="" required class="danger">maybe
+                <input name="danger" type="radio" value="" required class="danger">no
+                <label><span>Additonal Information:</span></label>
+                <textarea placeholder=" Any additonal information about the weather condition..."></textarea>
+                <p class="info">* Required Field</p>
             </fieldset>
+            
 
-            <input type="submit" value="Submit Storm Info" class="submitbutton">
+            <input type="submit" value="Submit Storm Info" class="submitbutton" id="button" align=left>
 
             <input type="hidden" value="Regional User Reported Weather" name="subject">
             <input name="redirect" type="hidden" value="http://zdurbin.github.io/Assignments/Lesson8/thanks.html">
@@ -104,6 +116,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/storm.js"></script>
 
 </body>
 

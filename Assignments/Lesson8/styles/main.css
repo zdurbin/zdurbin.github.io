@@ -258,7 +258,40 @@ img{
 
 /*Gallery End*/
 
-/*Storm Center Start*/
+/*********Storm Center Start*********/
+form#storm{
+    margin: 1em 3%;
+    margin: 0;
+}
+
+fieldset{
+    background-color: rgba(0,0,0,.2);
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #e7e7e7 solid 2px;
+    text-align: left;
+}
+
+legend{
+    color: #e7e7e7;
+    margin-left: 6%;
+    padding: .5em;
+    border: #e7e7e7 solid 1px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: .4em;
+    font-style: italic;
+    font-size: 1.2em
+}
+
+label{
+    display: block;
+    margin: .5em;
+}
+
+label span{
+    display: block;
+    
+}
 
 /*End Storm Center*/
 

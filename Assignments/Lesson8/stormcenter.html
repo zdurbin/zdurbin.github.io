@@ -51,19 +51,18 @@
         <form action="thanks.html" method="get" enctype="multipart/form-data" name="storm" id="report">
             <fieldset>
                 <legend><span>Personal Information</span></legend>
-                <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+                <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required ></label>
                 <label><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@carrier.com" required></label>
                 <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235556785" pattern="[0-9]{10,20}"></label>
                 <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="5-Digit Zip Code" pattern="[0-9]{5}" required></label>
-                <p class="info">* Required Field</p>
             </fieldset>
             
 
             <fieldset>
                 <legend><span>Storm Information</span></legend>
                 <label><span>Storm Date:</span><input name="date" type="date" required></label>
-                <span>Storm Type:</span><input name="storm" type="text" list="storms" placeholder="Weather Anomaly" required>
-                <datalist id="storms">
+                <label><span>Storm Type:</span><input name="storm" type="text" list="storms" placeholder="Weather Anomaly" required></label>
+                    <datalist id="storms">
                         <option value="flash flood"></option>
                         <option value="hail"></option>
                         <option value="hurricane"></option>
@@ -73,24 +72,23 @@
                 <label><span>Storm Severity:Rating (1 to 10)</span></label>
                 <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 <span id="ratingvalue">5</span>
-                <label for="location"><span>Storm Region:</span></label>
+                <label for="location" class="location"><span>Storm Region: *required</span></label>
                 <select name="home-location" id="location" required>
                         <option disabled selected value>Select Region</option>
                         <option value="Franklin">Franklin</option>
                         <option value="Greenville">Greenville</option>
                         <option value="Springfield">Springfield</option>
                 </select>
-                <label><span>User In-danger Level:</span></label>
+                <label><span class=userdanger>User In-danger Level:</span></label>
                 <input name="danger" type="radio" value="" required class="danger">yes
                 <input name="danger" type="radio" value="" required class="danger">maybe
                 <input name="danger" type="radio" value="" required class="danger">no
                 <label><span>Additonal Information:</span></label>
                 <textarea placeholder=" Any additonal information about the weather condition..."></textarea>
-                <p class="info">* Required Field</p>
             </fieldset>
             
 
-            <input type="submit" value="Submit Storm Info" class="submitbutton" id="button" align=left>
+            <input type="submit" value="Submit Storm Info" class="submitbutton" class="button" align=left>
 
             <input type="hidden" value="Regional User Reported Weather" name="subject">
             <input name="redirect" type="hidden" value="http://zdurbin.github.io/Assignments/Lesson8/thanks.html">

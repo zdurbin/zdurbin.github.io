@@ -265,6 +265,7 @@ form#storm{
 }
 
 fieldset{
+    box-shadow: 4px 4px 10px black;
     background-color: rgba(0,0,0,.2);
     border-radius: .8em;
     margin: 1.5em 0;
@@ -280,7 +281,8 @@ legend{
     background-color: rgba(0,0,0,.3);
     border-radius: .4em;
     font-style: italic;
-    font-size: 1.2em
+    font-size: 1.2em;
+    box-shadow: 4px 4px 10px black;
 }
 
 label{
@@ -290,9 +292,88 @@ label{
 
 label span{
     display: block;
-    
+    font-size: .8em;
+    color: #e7e7e7;
+    padding-top: .9em;
+    padding-bottom: .2em;
 }
 
+input.button{
+    display: block;
+    color: #e7e7e7;
+    background-color: rgba(0,0,0,.3);
+    border: #e7e7e7 solid 1px;
+    border-radius: 7px;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    box-shadow: 4px 4px 10px black;
+}
+
+label input{
+    background-color: #f4f2ef;
+    padding: .3em .3em .3em 2em;
+    border: #921405 solid 3px;
+    border-radius: 5px;
+    font-size: .9em;
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;box-shadow: 4px 4px 10px black;
+}
+
+input:focus{
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5) inset;
+}
+
+input:required{
+    background-position: 4px -61px;
+}
+
+input:focus:invalid{
+    background-position: 4px -111px;
+}
+
+input:focus:valid{
+    background-color: #ffffff;
+    background-position: 4px -161px;
+}
+
+#rating{
+    margin-top: .2em;
+    margin-bottom: .9em;
+    margin-left: .5em;
+    margin-right: 10px
+}
+
+#location{
+    margin-top: .2em;
+    margin-bottom: .9em;
+    margin-left: .5em;
+}
+
+.location{
+    margin-bottom: .2em
+}
+
+.userdanger{
+    margin-bottom: .2em;
+    padding-bottom: .2em;
+}
+
+.danger{
+    margin-left: .5em;
+    margin-top: .2em;
+    margin-bottom: .9em;
+}
+
+textarea{
+    min-height: 100px;
+    width: 90%;
+    margin-left: .5em;
+    box-shadow: 4px 4px 10px black;
+}
 /*End Storm Center*/
 
 /*Start Thanks*/

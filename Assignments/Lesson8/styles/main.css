@@ -298,7 +298,7 @@ label span{
     padding-bottom: .2em;
 }
 
-input.button{
+.submitbutton{
     display: block;
     color: #e7e7e7;
     background-color: rgba(0,0,0,.3);

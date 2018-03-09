@@ -51,15 +51,15 @@ section ul {
 }
 
 h2 {
-    font-size: 2rem;
-    letter-spacing: 10px;
+    font-size: 1.8rem;
     margin-bottom: 10px;
-    font-style: oblique;
+    font-style: italic;
     text-align: center;
+    font-family: 'Jim Nightshade', cursive;
 }
 article{
     border: white solid 1px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 10px lightgray;
     margin: .5rem;
 }

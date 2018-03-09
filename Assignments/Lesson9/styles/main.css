@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+@media screen and (max-width: 640px){
+
+/*header*/
+    header{
+       display: flex;
+        flex-flow: wrap;
+    }
+    
+    header img{
+       flex-shrink: 1;
+    }
+    
+    .heading{
+       flex-shrink: 2;
+    }
+/*Navigation*/
+    nav button{
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #e7e7e7
+    }
+    
+    nav ul.hide {
+    display: none;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li a{
+        flex: 1 1 0;
+        color: #621402;
+    }
+    
+    .forecast{
+    display: none;  
+    }
+    
+    .day{
+        display: none;
+    }
+    
+    table{
+        display: none;
+    }
+
+    
+}
+
+/*true for all*/
+/*main*/
+body {
+	background-color: #621402;
+	max-width: 75%;
+	margin: auto;
+	font-family: 'Merienda', cursive;
+	text-align: center;
+    color: #d7d7d7;
+	}
+/*header*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.heading{
+    flex: 2 1 0;
+    font-size: 5rem;
+    max-width: 75%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+        
+}
+.subheading{
+    color: #d7d7d7;
+    font-size: 1.5em;
+    font-style: italic;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-flow: nowrap;
+    flex: auto;
+    min-width: 100%;
+    margin-bottom: 20px
+}
+        
+header img{
+    flex: 1 1 0;
+    max-height: 25%;
+    max-width: 25%;        
+}
+
+/*font style*/
+h1{
+    font-size: 5em;
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Jim Nightshade', cursive;
+	color: #d7d7d7;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/*navigation*/
+
+nav{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav ul li{
+    background-color: #621402;
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li a{
+    text-align: center;
+    text-decoration: none; 
+    color: #e7e7e7;
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.4);
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;    
+}
+
+nav ul li.active{
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+nav ul.hide {
+    display: none;
+}
+/*content*/
+
+.city{
+    text-decoration: underline;
+    font-size: 1.9em;
+    font-style: italic;
+}
+
+.summery{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.day{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.forecast{
+    
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+table{
+    justify-content: center;
+    min-width: 100%;
+}
+
+th{
+    border: 1px #d7d7d7 solid;
+}
+
+td{
+    border: 1px #d7d7d7 solid;
+}
+
+tr{
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 100px;
+}
+
+article{
+    width: 100%;
+    text-align:justify;  
+}
+
+article img{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+article h3{
+    text-align: center;
+    padding: 0;
+    margin: 2% 0 0 0;
+}
+
+aside{
+    text-align: center;
+    font-size: .70em;
+    line-height: .5em;
+}
+
+.footer-bar{
+    text-align: center;
+}
+
+picture img{
+    width:auto;
+}
+
+img{
+    width:100%;
+    margin:auto;
+    align-content: center
+}
+
+.container{
+    padding-bottom: 20px;
+}
+.containerOne{
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* non collapse code */
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+/*Gallery Start*/
+
+#grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px; 
+}
+
+/*Gallery End*/
+
+/*********Storm Center Start*********/
+form#storm{
+    margin: 1em 3%;
+    margin: 0;
+}
+
+fieldset{
+    box-shadow: 4px 4px 10px black;
+    background-color: rgba(0,0,0,.2);
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #e7e7e7 solid 2px;
+    text-align: left;
+}
+
+legend{
+    color: #e7e7e7;
+    margin-left: 6%;
+    padding: .5em;
+    border: #e7e7e7 solid 1px;
+    background-color: rgba(0,0,0,.3);
+    border-radius: .4em;
+    font-style: italic;
+    font-size: 1.2em;
+    box-shadow: 4px 4px 10px black;
+}
+
+label{
+    display: block;
+    margin: .5em;
+}
+
+label span{
+    display: block;
+    font-size: .8em;
+    color: #e7e7e7;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+.submitbutton{
+    display: block;
+    color: #e7e7e7;
+    background-color: rgba(0,0,0,.3);
+    border: #e7e7e7 solid 1px;
+    border-radius: 7px;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    box-shadow: 4px 4px 10px black;
+}
+
+label input{
+    background-color: #f4f2ef;
+    padding: .3em .3em .3em 2em;
+    border: #921405 solid 3px;
+    border-radius: 5px;
+    font-size: .9em;
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;box-shadow: 4px 4px 10px black;
+}
+
+input:focus{
+    box-shadow: 1px 1px 4px rgba(0,0,0,.5) inset;
+}
+
+input:required{
+    background-position: 4px -61px;
+}
+
+input:focus:invalid{
+    background-position: 4px -111px;
+}
+
+input:focus:valid{
+    background-color: #ffffff;
+    background-position: 4px -161px;
+}
+
+#rating{
+    margin-top: .2em;
+    margin-bottom: .9em;
+    margin-left: .5em;
+    margin-right: 10px
+}
+
+#location{
+    margin-top: .2em;
+    margin-bottom: .9em;
+    margin-left: .5em;
+}
+
+.location{
+    margin-bottom: .2em
+}
+
+.userdanger{
+    margin-bottom: .2em;
+    padding-bottom: .2em;
+}
+
+.danger{
+    margin-left: .5em;
+    margin-top: .2em;
+    margin-bottom: .9em;
+}
+
+textarea{
+    min-height: 100px;
+    width: 90%;
+    margin-left: .5em;
+    box-shadow: 4px 4px 10px black;
+}
+/*End Storm Center*/
+
+/*Start Thanks*/
+
+#thanks{
+    text-align: justify;
+}
+
+#home{
+    color: #e7e7e7;
+}
+/*End Thanks*/
+
+
+
+

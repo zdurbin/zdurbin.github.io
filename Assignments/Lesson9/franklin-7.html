@@ -9,7 +9,7 @@
   <!-- external style references in the proper cascading order -->   
         
         <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">  <!-- Google API font reference -->
-        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+       
         
         <link href="styles/main.css" rel="stylesheet">
         <!-- default styles - small/phone views -->
@@ -27,7 +27,7 @@
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776; Menu</button>
                 <ul id="primaryNav" class="hide">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li class="active"><a href="franklin-7.html" >Franklin</a></li>
                     <li><a href="#">Greenville</a></li>
                     <li><a href="#">Springfield</a></li>
@@ -50,15 +50,17 @@
                             <p>Low: <span id="low">60</span>&deg;F</p>  
                         </div>
                     <div class="current">
-                        Sunny
+                        <p>Current Temp: <span id="currentTemp"></span>&deg; F</p>
+                        <p>What you can expect today: <span id="forcast"></span></p>
                         <picture>
-                            <img src="images/sunny.png" alt="sun" width="50" height="50">
+                            <img id= "w_icon" src="" alt="current weather" width="50" height="50">
                         </picture>
+                        <p>Current Conditons: <span id="conditions"></span></p>
                     </div>   
                     <div class="conditions">
-                        <p>Precipitation: 0%</p>  
+                        <p>Precipitation: <span id="rain">0</span> Inches in the next hour</p>  
                         <p>Wind Speed: <span  id="speed">5</span> MPH</p>
-                        <p>Wind Chill: <span id="windchill"></span>&deg;</p>
+                        <p>Wind Chill: <span id="windchill"></span>&deg; F</p>
                     </div>           
                 </section>
 
@@ -97,10 +99,10 @@
                 </section>
             </div>
                 <article>
-                    <h3>Franklin Breaks Record</h3>	
+                    <h2>Franklin Breaks Record</h2>	
                         <p class="town-article">
                             <img src="images/record1.jpg" alt="sunny day"></p>
-                        <h3>Today marks record highs for the third week</h3>
+                        <h3 class="townh3">Today marks record highs for the third week</h3>
                         <p>As tempetures continue to rise in the area, the city of franklin now enters its thrid week
                             of new highs. An unseasonable warm front has moved into the area bringing with it tempetures that the reason have not seen in over a hundred years for the month of January.<br><br>
                             Local residents seem to enjoy the mild late-winter weather, but are now showing a concern due to the lack of snow accumulations this year. With the low snow pack in the mountains, the reagion could be facing a very low water table for crops and agraculture.<br><br>
@@ -125,6 +127,6 @@
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/windchill.js"></script>
-        
+        <script type= "text/javascript" src="scripts/wu-weather.js"></script>
         </body>
 </html>

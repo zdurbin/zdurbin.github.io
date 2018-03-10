@@ -166,7 +166,16 @@ nav ul.hide {
     text-decoration: underline;
     font-size: 1.9em;
     font-style: italic;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
+#cityInfo{
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
 
 .summery {
     text-align: center;

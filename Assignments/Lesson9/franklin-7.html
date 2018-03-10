@@ -42,9 +42,8 @@
 
     </nav>
 
-    <main class="clearfix">
-        <h2 class="city">The City of Franklin</h2>
-        <section>
+    <main >
+        <section id="cityInfo">
         </section>
         <script>
         var header = document.querySelector("header");
@@ -78,7 +77,7 @@
                     var myPara3 = document.createElement("p");
                     var myPara4 = document.createElement("p")
                     var myList = document.createElement("ul");
-                    //myH2.textContent = towns[0].name;
+                    myH2.textContent = towns[0].name;
                     myH3.textContent = "Motto: " + towns[0].motto;
                     myPara1.textContent = "Year Founded: " + towns[0].yearFounded;
                     myPara2.textContent = "Current Population: " + towns[0].currentPopulation;

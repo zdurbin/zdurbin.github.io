@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
 
-/*header*/
-    header{
-       display: flex;
+    /*header*/
+    header {
+        display: flex;
         flex-flow: wrap;
     }
-    
-    header img{
-       flex-shrink: 1;
+
+    header img {
+        flex-shrink: 1;
     }
-    
-    .heading{
-       flex-shrink: 2;
+
+    .heading {
+        flex-shrink: 2;
     }
-/*Navigation*/
-    nav button{
+    /*Navigation*/
+    nav button {
         margin: .2rem 2%;
         background-color: transparent;
         border: none;
         font-size: 1.6rem;
         color: #e7e7e7
     }
-    
+
     nav ul.hide {
-    display: none;
+        display: none;
     }
-    
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -35,52 +35,57 @@
         padding: 0;
         margin: 0;
     }
-    
-    nav ul li a{
+
+    nav ul li a {
         flex: 1 1 0;
         color: #621402;
     }
-    
-    .forecast{
-    display: none;  
-    }
-    
-    .day{
-        display: none;
-    }
-    
-    table{
+
+    .forecast {
         display: none;
     }
 
-    
+    .day {
+        display: none;
+    }
+
+    table {
+        display: none;
+    }
+
+
 }
 
 /********** true for all ************/
+
 /*main*/
+
 body {
-	background-color: #621402;
-	max-width: 75%;
-	margin: auto;
-	font-family: 'Merienda', cursive;
-	text-align: center;
+    background-color: #621402;
+    max-width: 75%;
+    margin: auto;
+    font-family: 'Merienda', cursive;
+    text-align: center;
     color: #d7d7d7;
-	}
+}
+
 /*header*/
-header{
+
+header {
     display: flex;
     flex-flow: row wrap;
 }
 
-.heading{
+.heading {
     flex: 2 1 0;
     font-size: 5rem;
     max-width: 75%;
     padding-bottom: 0px;
     margin-bottom: 0px;
-        
+
 }
-.subheading{
+
+.subheading {
     color: #d7d7d7;
     font-size: 1.5em;
     font-style: italic;
@@ -91,34 +96,40 @@ header{
     min-width: 100%;
     margin-bottom: 20px
 }
-        
-header img{
+
+header img {
     flex: 1 1 0;
     max-height: 25%;
-    max-width: 25%;        
+    max-width: 25%;
 }
 
 /*font style*/
-h1{
+
+h1 {
     font-size: 5em;
     font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6{
-	font-family: 'Jim Nightshade', cursive;
-	color: #d7d7d7;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Jim Nightshade', cursive;
+    color: #d7d7d7;
     font-size: 1.5em;
     text-decoration: underline;
 }
 
 /*navigation*/
 
-nav{
+nav {
     margin-top: 0;
     padding-top: 0;
 }
 
-nav ul li{
+nav ul li {
     background-color: #621402;
     text-decoration: none;
     padding-top: 0;
@@ -128,169 +139,173 @@ nav ul li{
     align-content: center;
 }
 
-nav ul li a{
+nav ul li a {
     text-align: center;
-    text-decoration: none; 
+    text-decoration: none;
     color: #e7e7e7;
 }
 
-nav ul li a:hover{
-    background-color: rgba(0,0,0,0.4);
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
     border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;    
+    border-bottom: 1px solid #e7e7e7;
 }
 
-nav ul li.active{
-    background-color: rgba(0,0,0,0.2);
-    
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 nav ul.hide {
     display: none;
 }
+
 /*content*/
 
-.city{
+.city {
     text-decoration: underline;
     font-size: 1.9em;
     font-style: italic;
 }
 
-.summery{
+.summery {
     text-align: center;
     width: 100%;
     margin: auto;
 }
 
-.day{
+.day {
     text-align: center;
     width: 100%;
     margin: auto;
 }
 
-.forecast{
-    
+.forecast {
+
     display: flex;
     width: 100%;
     align-content: center;
     justify-content: space-around;
     text-align: center;
-    
+
 }
 
-table{
+table {
     justify-content: center;
     min-width: 100%;
 }
 
-th{
+th {
     border: 1px #d7d7d7 solid;
 }
 
-td{
+td {
     border: 1px #d7d7d7 solid;
 }
 
-tr{
+tr {
     justify-content: center;
     flex-grow: 1;
     min-width: 100px;
 }
 
-article{
+article {
     width: 100%;
-    text-align:justify;  
+    text-align: justify;
 }
 
-article img{
+article img {
     display: flex;
     padding: 0;
     margin: 0;
 }
 
-.townh3{
+.townh3 {
     text-align: center;
     padding: 0;
     margin: 2% 0 0 0;
 }
 
-aside{
+aside {
     text-align: center;
     font-size: .70em;
     line-height: .5em;
 }
 
-.footer-bar{
+.footer-bar {
     text-align: center;
 }
 
-picture img{
-    width:auto;
+picture img {
+    width: auto;
 }
 
-img{
-    width:100%;
-    margin:auto;
+img {
+    width: 100%;
+    margin: auto;
     align-content: center
 }
 
-.container{
+.container {
     padding-bottom: 20px;
 }
-.containerOne{
+
+.containerOne {
     border-bottom: 1px solid #e7e7e7;
 }
 
 /* non collapse code */
-.clearfix:after{
+
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
-} 
+}
 
 /********** Gallery Start ***********/
 
-#grid{
+#grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px; 
+    grid-gap: 20px;
 }
 
 /********* Gallery End **************/
 
 /*********Storm Center Start*********/
-form#storm{
+
+form#storm {
     margin: 1em 3%;
     margin: 0;
 }
 
-fieldset{
+fieldset {
     box-shadow: 4px 4px 10px black;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
     border-radius: .8em;
     margin: 1.5em 0;
     border: #e7e7e7 solid 2px;
     text-align: left;
 }
 
-legend{
+legend {
     color: #e7e7e7;
     margin-left: 6%;
     padding: .5em;
     border: #e7e7e7 solid 1px;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     border-radius: .4em;
     font-style: italic;
     font-size: 1.2em;
     box-shadow: 4px 4px 10px black;
 }
 
-label{
+label {
     display: block;
     margin: .5em;
 }
 
-label span{
+label span {
     display: block;
     font-size: .8em;
     color: #e7e7e7;
@@ -298,10 +313,10 @@ label span{
     padding-bottom: .2em;
 }
 
-.submitbutton{
+.submitbutton {
     display: block;
     color: #e7e7e7;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0, 0, 0, .3);
     border: #e7e7e7 solid 1px;
     border-radius: 7px;
     margin: .5em 0;
@@ -310,7 +325,7 @@ label span{
     box-shadow: 4px 4px 10px black;
 }
 
-label input{
+label input {
     background-color: #f4f2ef;
     padding: .3em .3em .3em 2em;
     border: #921405 solid 3px;
@@ -320,81 +335,86 @@ label input{
     max-width: 500px;
     background-image: url(../images/ico_validation.png);
     background-repeat: no-repeat;
-    background-position: 4px -11px;box-shadow: 4px 4px 10px black;
+    background-position: 4px -11px;
+    box-shadow: 4px 4px 10px black;
 }
 
-input:focus{
-    box-shadow: 1px 1px 4px rgba(0,0,0,.5) inset;
+input:focus {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5) inset;
 }
 
-input:required{
+input:required {
     background-position: 4px -61px;
 }
 
-input:focus:invalid{
+input:focus:invalid {
     background-position: 4px -111px;
 }
 
-input:focus:valid{
+input:focus:valid {
     background-color: #ffffff;
     background-position: 4px -161px;
 }
 
-#rating{
+#rating {
     margin-top: .2em;
     margin-bottom: .9em;
     margin-left: .5em;
     margin-right: 10px
 }
 
-#location{
+#location {
     margin-top: .2em;
     margin-bottom: .9em;
     margin-left: .5em;
 }
 
-.location{
+.location {
     margin-bottom: .2em
 }
 
-.userdanger{
+.userdanger {
     margin-bottom: .2em;
     padding-bottom: .2em;
 }
 
-.danger{
+.danger {
     margin-left: .5em;
     margin-top: .2em;
     margin-bottom: .9em;
 }
 
-textarea{
+textarea {
     min-height: 100px;
     width: 90%;
     margin-left: .5em;
     box-shadow: 4px 4px 10px black;
 }
+
 /*End Storm Center*/
 
 /************ Start Thanks **************/
 
-#thanks{
+#thanks {
     text-align: justify;
 }
 
-#home{
+#home {
     color: #e7e7e7;
 }
+
 /*End Thanks*/
 
 /************ Start Index Page **********/
-article p{
+
+article p {
     padding-bottom: 0;
     padding-top: 0;
     margin-bottom: 0;
     margin-top: 0;
 }
-article h2{
+
+article h2 {
     font-size: 2.5rem;
     font-style: italic;
     padding-bottom: 0px;
@@ -402,7 +422,7 @@ article h2{
     text-align: center;
 }
 
-article h3{
+article h3 {
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 3px;
@@ -410,11 +430,11 @@ article h3{
     text-decoration: none;
 }
 
-article p{
+article p {
     padding-top: 0;
     margin-top: 0;
 }
 
- section article li{
+section article li {
     display: block;
 }

@@ -26,7 +26,7 @@ weatherObject.onload = function() {
 }
 
 var forcastObject = new XMLHttpRequest();
-forcastObject.open('GET', 'http://api.wunderground.com/api/4326409d402b76d5/forecast/q/MN/Franklin.json', true);
+forcastObject.open('GET', '//api.wunderground.com/api/4326409d402b76d5/forecast/q/MN/Franklin.json', true);
 forcastObject.send();
 
 forcastObject.onload = function(){

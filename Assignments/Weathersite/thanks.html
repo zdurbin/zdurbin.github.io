@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather</title>
+    <meta name="author" content="Zachery D. ~ Student">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body onLoad="renderTime();">
+    <header>
+        <img src="images/logo1.png" alt="The site logo">
+        <h1 class="heading">Weather Adventures</h1>
+        <div class="subheading">Where ever the wind takes you!</div>
+    </header>
+    <main>
+        <h2>Thank You</h2>
+        <p id="thanks">Thank you for your submission of your local weather conditions. With inputs from people in the region, you are helping to improve our tracking and warning capabilities.<br><br>Sincerely,<br> Weather Adventures Staff</p>
+        
+        <p>Please click here to return to <a href="index.html" id= "home">Weather Adventures home page</a></p>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>Weather Adventures</p>
+            <p>123 Main St.</p>
+            <p>Franklin, MU 83454</p>
+            <p>(999) 999-9999</p>
+            <p><a href="contact@theurl.com">contact@theurl.com</a></p>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p>
+        <div id="clockDisplay" class="container"></div>
+
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

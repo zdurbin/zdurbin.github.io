@@ -1,0 +1,2 @@
+[2/18/2018, 5:00:38 PM] layer "300x227 logo1.png, 600x457 logo1.png, 900x681 logo1.png": Duplicate path: logo1.png
+[2/18/2018, 5:00:38 PM] layer "300x227 logo1.png, 600x457 logo1.png, 900x681 logo1.png": Duplicate path: logo1.png

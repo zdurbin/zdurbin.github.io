@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title>
+    <meta name="author" content="Zachery D. ~ Student">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <script>
+        function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+    </script>
+</head>
+
+<body onLoad="renderTime();">
+    <header>
+        <img src="images/logo1.png" alt="The site logo">
+        <h1 class="heading">Weather Adventures</h1>
+        <div class="subheading">Where ever the wind takes you!</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+        <button onclick="toggleNavMenu()">&#9776; Menu</button>
+        <ul id= "mainmenu" class= "hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="clearfix">
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="storm" id="report">
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required ></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@carrier.com" required></label>
+                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235556785" pattern="[0-9]{10,20}"></label>
+                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="5-Digit Zip Code" required></label>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend><span>Storm Information</span></legend>
+                <label><span>Storm Date:</span><input name="date" type="date" required></label>
+                <label><span>Storm Type:</span><input name="storm" type="text" list="storms" placeholder="Weather Anomaly" required></label>
+                    <datalist id="storms">
+                        <option value="flash flood"></option>
+                        <option value="hail"></option>
+                        <option value="hurricane"></option>
+                        <option value="thunderstorm"></option>
+                        <option value="tornado"></option>
+                    </datalist>
+                <label><span>Storm Severity:Rating (1 to 10)</span></label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+                <label for="location" class="location"><span>Storm Region: *required</span></label>
+                <select name="home-location" id="location" required>
+                        <option disabled selected value>Select Region</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+                </select>
+                <label><span class=userdanger>User In-danger Level:</span></label>
+                <input name="danger" type="radio" value="" required class="danger">yes
+                <input name="danger" type="radio" value="" required class="danger">maybe
+                <input name="danger" type="radio" value="" required class="danger">no
+                <label><span>Additonal Information:</span></label>
+                <textarea placeholder=" Any additonal information about the weather condition..."></textarea>
+            </fieldset>
+            
+
+            <input type="submit" value="Submit Storm Info" class="submitbutton">
+
+            <input type="hidden" value="Regional User Reported Weather" name="subject">
+            <input name="redirect" type="hidden" value="http://zdurbin.github.io/Assignments/Lesson8/thanks.html">
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>Weather Adventures</p>
+            <p>123 Main St.</p>
+            <p>Franklin, MU 83454</p>
+            <p>(999) 999-9999</p>
+            <p><a href="contact@theurl.com">contact@theurl.com</a></p>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p>
+        <div id="clockDisplay" class="container"></div>
+
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/storm.js"></script>
+
+</body>
+<script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    
+    if (pageHREF !==""){
+        var menu= document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        
+        for(i=0; i<menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className = "";
+            if (currentURL===pageHREF) {
+                menu[i].parentNode.className = "active";
+            }
+        }
+    }
+    </script>
+</html>

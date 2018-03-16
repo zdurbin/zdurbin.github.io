@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather</title>
+    <meta name="author" content="Zachery D. ~ Student">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <!-- Google API font reference -->
+
+
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body onLoad="renderTime();">
+    <header>
+        <img src="images/logo1.png" alt="The site logo">
+        <h1 class="heading">Weather Adventures</h1>
+        <div class="subheading">Where ever the wind takes you!</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+        <button onclick="toggleNavMenu()">&#9776; Menu</button>
+        <ul id= "mainmenu" class= "hide">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+
+    </nav>
+
+    <main >
+        <section id="cityInfo">
+        </section>
+        <script>
+        var header = document.querySelector("header");
+            var section = document.querySelector("section");
+            var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+            var request = new XMLHttpRequest();
+            request.open("GET", requestURL);
+            request.responseType = "json";
+            request.send();
+            request.onload = function() {
+                var towns = request.response;
+                populateHeader(towns);
+                showTowns(towns);
+            }
+
+            function populateHeader(jsonObj) {
+                var myH1 = document.createElement('h1');
+                header.appendChild(myH1);
+                var myPara = document.createElement('p');
+                header.appendChild(myPara);
+            }
+
+            function showTowns(jsonObj) {
+                var towns = jsonObj["towns"];
+                
+                    var myArticle = document.createElement("article");
+                    var myH2 = document.createElement("h2");
+                    var myH3 = document.createElement("h3")
+                    var myPara1 = document.createElement("p");
+                    var myPara2 = document.createElement("p");
+                    var myPara3 = document.createElement("p");
+                    var myPara4 = document.createElement("p")
+                    var myList = document.createElement("ul");
+                    myH2.textContent = towns[1].name;
+                    myH3.textContent = "Motto: " + towns[1].motto;
+                    myPara1.textContent = "Year Founded: " + towns[1].yearFounded;
+                    myPara2.textContent = "Current Population: " + towns[1].currentPopulation;
+                    myPara3.textContent = "Average Rainfall: " + towns[1].averageRainfall;
+                    myPara4.textContent = "Events: " + towns[01].events;
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myH3);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myPara4);
+                    section.appendChild(myArticle);             
+                    //var listItem = document.createElement("li");
+                    //listItem.textContent = events[j];
+                    //myList.appendChild(listItem);
+                
+            }
+        </script>
+        <figure class="cityimage">
+            <img src="images/city1.jpg" alt="sunny field">
+        </figure>
+        <div class="weather">
+            <section class="summery">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <p>High: <span id="hiA">83</span>&deg;F</p>
+                    <p>Low: <span id="lowA">60</span>&deg;F</p>
+                </div>
+                <div class="current">
+                    <p>Current Temp: <span id="currentTempA"></span>&deg; F</p>
+                    <p>What you can expect today: <span id="forcastA"></span></p>
+                    <picture>
+                        <img id="w_iconA" src="placeholder.png" alt="current weather" width="50" height="50">
+                    </picture>
+                    <p>Current Conditons: <span id="conditionsA"></span></p>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: <span id="rainA">0</span> Inches in the next hour</p>
+                    <p>Wind Speed: <span id="speedA">5</span> MPH</p>
+                    <p>Wind Chill: <span id="windchillA"></span>&deg; F</p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3 class="day">10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <article>
+            <h2>Franklin Breaks Record</h2>
+            <p class="town-article">
+                <img src="images/record1.jpg" alt="sunny day"></p>
+            <h3 class="townh3">Today marks record highs for the third week</h3>
+            <p>As tempetures continue to rise in the area, the city of franklin now enters its thrid week of new highs. An unseasonable warm front has moved into the area bringing with it tempetures that the reason have not seen in over a hundred years for the month of January.<br><br> Local residents seem to enjoy the mild late-winter weather, but are now showing a concern due to the lack of snow accumulations this year. With the low snow pack in the mountains, the reagion could be facing a very low water table for crops and agraculture.<br><br> Town leadership had this to say about the current weather patterns: "While the lack of snow may pose a slight drop in our towns resivours, we have measures in place to ensure that there will be a large enough water supply that the lower levels should pose no real threat to our agracultural demands."
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>Weather Adventures</p>
+            <p>123 Main St.</p>
+            <p>Franklin, MU 83454</p>
+            <p>(999) 999-9999</p>
+            <p><a href="contact@theurl.com">contact@theurl.com</a></p>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p>
+        <div id="clockDisplay" class="container"></div>
+
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu-weather.js"></script>
+   
+</body>
+<script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    
+    if (pageHREF !==""){
+        var menu= document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        
+        for(i=0; i<menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className = "";
+            if (currentURL===pageHREF) {
+                menu[i].parentNode.className = "active";
+            }
+        }
+    }
+    </script>
+</html>

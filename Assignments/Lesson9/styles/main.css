@@ -103,6 +103,11 @@ header img {
     max-width: 25%;
 }
 
+/*footer*/
+footer a{
+    color: #e7e7e7;
+}
+
 /*font style*/
 
 h1 {

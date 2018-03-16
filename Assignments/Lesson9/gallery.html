@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Franklin Weather</title>
+        <title>Weather Gallery</title>
         <meta name="author" content="Zachery D. ~ Student">
         <meta name="description" content="page description placeholder">
   <!-- external style references in the proper cascading order -->   
@@ -26,13 +26,13 @@
   <!-- site navigation use placeholder references -->
         <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776; Menu</button>
-            <ul id="primaryNav" class="hide">
-                <li><a href="index.html">Home</a></li>
+            <ul id="mainmenu" class="hide">
+                <li class= "active"><a href="index.html">Home</a></li>
                 <li><a href="franklin-7.html" >Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li><a href="stormcenter.html">Storm Center</a></li>
-                <li class= "active"><a href="gallery.html" >Gallery</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
             </ul>
             
         </nav>
@@ -85,4 +85,22 @@
         <script src="scripts/windchill.js"></script>
         
     </body>
+ <script>
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+    
+    if (pageHREF !==""){
+        var menu= document.querySelectorAll('ul#mainmenu li a');
+        var i;
+        
+        for(i=0; i<menu.length; i++) {
+            var currentURL = (menu[i].getAttribute("href"));
+            menu[i].parentNode.className = "";
+            if (currentURL===pageHREF) {
+                menu[i].parentNode.className = "active";
+            }
+        }
+    }
+    </script>
 </html>

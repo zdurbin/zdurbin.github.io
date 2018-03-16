@@ -21,7 +21,7 @@ weatherObject.onload = function() {
         icon_path = icon_path.replace("http", "https");
     }
     
-    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+    document.getElementById('w_icon').src = icon_path;
     
 }
 

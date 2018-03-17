@@ -21,8 +21,8 @@
     <!-- large/wide/desktop views -->
     <script>
         function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
-}
+            document.getElementById("ratingvalue").innerHTML = rating;
+        }
     </script>
 </head>
 
@@ -36,7 +36,7 @@
     <!-- site navigation use placeholder references -->
     <nav class="clearfix">
         <button onclick="toggleNavMenu()">&#9776; Menu</button>
-        <ul id= "mainmenu" class= "hide">
+        <ul id="mainmenu" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
@@ -55,13 +55,13 @@
                 <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235556785" pattern="[0-9]{10,20}"></label>
                 <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="5-Digit Zip Code" required></label>
             </fieldset>
-            
+
 
             <fieldset>
                 <legend><span>Storm Information</span></legend>
                 <label><span>Storm Date:</span><input name="date" type="date" required></label>
                 <label><span>Storm Type:</span><input name="storm" type="text" list="storms" placeholder="Weather Anomaly" required></label>
-                    <datalist id="storms">
+                <datalist id="storms">
                         <option value="flash flood"></option>
                         <option value="hail"></option>
                         <option value="hurricane"></option>
@@ -85,7 +85,7 @@
                 <label><span>Additonal Information:</span></label>
                 <textarea placeholder=" Any additonal information about the weather condition..."></textarea>
             </fieldset>
-            
+
 
             <input type="submit" value="Submit Storm Info" class="submitbutton">
 
@@ -118,19 +118,20 @@
 <script>
     var urlString = document.location.href;
     var urlArray = urlString.split('/');
-    var pageHREF = urlArray[urlArray.length-1];
-    
-    if (pageHREF !==""){
-        var menu= document.querySelectorAll('ul#mainmenu li a');
+    var pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
         var i;
-        
-        for(i=0; i<menu.length; i++) {
+
+        for (i = 0; i < menu.length; i++) {
             var currentURL = (menu[i].getAttribute("href"));
             menu[i].parentNode.className = "";
-            if (currentURL===pageHREF) {
+            if (currentURL === pageHREF) {
                 menu[i].parentNode.className = "active";
             }
         }
     }
-    </script>
+</script>
+
 </html>

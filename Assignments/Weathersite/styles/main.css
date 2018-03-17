@@ -104,7 +104,8 @@ header img {
 }
 
 /*footer*/
-footer a{
+
+footer a {
     color: #e7e7e7;
 }
 
@@ -175,10 +176,10 @@ nav ul.hide {
     margin-bottom: 0;
 }
 
-#cityInfo{
+#cityInfo {
     margin-top: 0;
     padding-top: 0;
-    
+
 }
 
 

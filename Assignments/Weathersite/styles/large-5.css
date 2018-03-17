@@ -1,75 +1,75 @@
-@media screen and (min-width: 64rem ){
-    .forecast{
+@media screen and (min-width: 64rem) {
+    .forecast {
         display: block;
     }
-    
-    .day{
+
+    .day {
         display: block;
     }
-    
-    figure img{
-        width:100%;
+
+    figure img {
+        width: 100%;
         height: 100%;
     }
-    
-    article img{
+
+    article img {
         margin: 100px;
-        width:95%;
-        height:95%;
+        width: 95%;
+        height: 95%;
     }
-    
-    .handle{
+
+    .handle {
         display: none;
     }
-    
-    nav ul.hide{
+
+    nav ul.hide {
         display: flex;
     }
-    
-    nav ul li{
+
+    nav ul li {
         flex: 1 1 0;
-        clear:both;
+        clear: both;
     }
-    
+
     nav button {
-        display: none; 
+        display: none;
     }
-    
-    nav ul{
+
+    nav ul {
         display: flex;
         align-content: space-around;
         margin-top: 0;
         padding-right: 10px;
         text-align: center;
     }
-    
-    nav ul li a{
+
+    nav ul li a {
         text-align: center;
         margin: 3px;
-        padding: 0; 
+        padding: 0;
         margin-right: 60px;
         color: #e7e7e7;
     }
-        
-    article img{
-    display: flex;
-    padding: 0;
-    margin: 0 auto;
-    justify-content: center;
-}
-    main h2{
+
+    article img {
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    main h2 {
         padding-top: 100px;
         width: 100%;
     }
-    
-    #grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-        
-}
-    figure:hover{
-    box-shadow: 5px 5px 10px black;  
-}
-    
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+    }
+    figure:hover {
+        box-shadow: 5px 5px 10px black;
+    }
+
 }

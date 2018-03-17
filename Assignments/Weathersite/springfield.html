@@ -31,7 +31,7 @@
     <!-- site navigation use placeholder references -->
     <nav class="clearfix">
         <button onclick="toggleNavMenu()">&#9776; Menu</button>
-        <ul id= "mainmenu" class= "hide">
+        <ul id="mainmenu" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
@@ -42,11 +42,11 @@
 
     </nav>
 
-    <main >
+    <main>
         <section id="cityInfo">
         </section>
         <script>
-        var header = document.querySelector("header");
+            var header = document.querySelector("header");
             var section = document.querySelector("section");
             var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
             var request = new XMLHttpRequest();
@@ -68,32 +68,32 @@
 
             function showTowns(jsonObj) {
                 var towns = jsonObj["towns"];
-                
-                    var myArticle = document.createElement("article");
-                    var myH2 = document.createElement("h2");
-                    var myH3 = document.createElement("h3")
-                    var myPara1 = document.createElement("p");
-                    var myPara2 = document.createElement("p");
-                    var myPara3 = document.createElement("p");
-                    var myPara4 = document.createElement("p")
-                    var myList = document.createElement("ul");
-                    myH2.textContent = towns[3].name;
-                    myH3.textContent = "Motto: " + towns[3].motto;
-                    myPara1.textContent = "Year Founded: " + towns[3].yearFounded;
-                    myPara2.textContent = "Current Population: " + towns[3].currentPopulation;
-                    myPara3.textContent = "Average Rainfall: " + towns[3].averageRainfall;
-                    myPara4.textContent = "Events: " + towns[3].events;
-                    myArticle.appendChild(myH2);
-                    myArticle.appendChild(myH3);
-                    myArticle.appendChild(myPara1);
-                    myArticle.appendChild(myPara2);
-                    myArticle.appendChild(myPara3);
-                    myArticle.appendChild(myPara4);
-                    section.appendChild(myArticle);             
-                    //var listItem = document.createElement("li");
-                    //listItem.textContent = events[j];
-                    //myList.appendChild(listItem);
-                
+
+                var myArticle = document.createElement("article");
+                var myH2 = document.createElement("h2");
+                var myH3 = document.createElement("h3")
+                var myPara1 = document.createElement("p");
+                var myPara2 = document.createElement("p");
+                var myPara3 = document.createElement("p");
+                var myPara4 = document.createElement("p")
+                var myList = document.createElement("ul");
+                myH2.textContent = towns[3].name;
+                myH3.textContent = "Motto: " + towns[3].motto;
+                myPara1.textContent = "Year Founded: " + towns[3].yearFounded;
+                myPara2.textContent = "Current Population: " + towns[3].currentPopulation;
+                myPara3.textContent = "Average Rainfall: " + towns[3].averageRainfall;
+                myPara4.textContent = "Events: " + towns[3].events;
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myH3);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myPara4);
+                section.appendChild(myArticle);
+                //var listItem = document.createElement("li");
+                //listItem.textContent = events[j];
+                //myList.appendChild(listItem);
+
             }
         </script>
         <figure class="cityimage">
@@ -160,7 +160,7 @@
             <p class="town-article">
                 <img src="images/record1.jpg" alt="sunny day"></p>
             <h3 class="townh3">What to do in a flooding emergancy</h3>
-            <p>As our weather emergancy week here in Springfield draws to a close, today we are going to talk about the dangers of flooding. With the high snowfall that we had this year, our risk of floods happening during the spring thaw are highly elevated. <br><br> We have never been a stranger to flooding in our area and this year will prove no different. Already city officials are working to shore up the banks of our local rivers. Our local emergancy responders are running drills in river rescues. But what should you do if you find yourself in a flooding situation?<br><br>First do not panic. If at all possible find higher ground, if you are caught in the water try to grasp onto anything that will float and kick your way to the shore. Do not try to fight against the current but move with it. 
+            <p>As our weather emergancy week here in Springfield draws to a close, today we are going to talk about the dangers of flooding. With the high snowfall that we had this year, our risk of floods happening during the spring thaw are highly elevated. <br><br> We have never been a stranger to flooding in our area and this year will prove no different. Already city officials are working to shore up the banks of our local rivers. Our local emergancy responders are running drills in river rescues. But what should you do if you find yourself in a flooding situation?<br><br>First do not panic. If at all possible find higher ground, if you are caught in the water try to grasp onto anything that will float and kick your way to the shore. Do not try to fight against the current but move with it.
             </p>
         </article>
 
@@ -182,24 +182,25 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/wu-weatherb.js"></script>
-   
+
 </body>
 <script>
     var urlString = document.location.href;
     var urlArray = urlString.split('/');
-    var pageHREF = urlArray[urlArray.length-1];
-    
-    if (pageHREF !==""){
-        var menu= document.querySelectorAll('ul#mainmenu li a');
+    var pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        var menu = document.querySelectorAll('ul#mainmenu li a');
         var i;
-        
-        for(i=0; i<menu.length; i++) {
+
+        for (i = 0; i < menu.length; i++) {
             var currentURL = (menu[i].getAttribute("href"));
             menu[i].parentNode.className = "";
-            if (currentURL===pageHREF) {
+            if (currentURL === pageHREF) {
                 menu[i].parentNode.className = "active";
             }
         }
     }
-    </script>
+</script>
+
 </html>

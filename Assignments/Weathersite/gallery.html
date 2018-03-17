@@ -1,32 +1,38 @@
 <!doctype html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Weather Gallery</title>
-        <meta name="author" content="Zachery D. ~ Student">
-        <meta name="description" content="page description placeholder">
-  <!-- external style references in the proper cascading order -->   
-        
-        <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">  <!-- Google API font reference -->
-        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-        
-        <link href="styles/main.css" rel="stylesheet">
-        <!-- default styles - small/phone views -->
-        <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
-        <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
-    </head>
-    <body onLoad = "renderTime();">
-        <header>
-            <img src="images/logo1.png" alt="The site logo">
-            <h1 class="heading">Weather Adventures</h1>
-            <div class="subheading">Where ever the wind takes you!</div>
-        </header>
 
-  <!-- site navigation use placeholder references -->
-        <nav class="clearfix">
-            <button onclick="toggleNavMenu()">&#9776; Menu</button>
-            <ul id= "mainmenu" class= "hide">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Gallery</title>
+    <meta name="author" content="Zachery D. ~ Student">
+    <meta name="description" content="page description placeholder">
+    <!-- external style references in the proper cascading order -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body onLoad="renderTime();">
+    <header>
+        <img src="images/logo1.png" alt="The site logo">
+        <h1 class="heading">Weather Adventures</h1>
+        <div class="subheading">Where ever the wind takes you!</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+        <button onclick="toggleNavMenu()">&#9776; Menu</button>
+        <ul id="mainmenu" class="hide">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="franklin.html">Franklin</a></li>
             <li><a href="greenville.html">Greenville</a></li>
@@ -34,72 +40,73 @@
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
-            
-        </nav>
-    
-        <main>
-            
-            <div id= "grid">
-                <figure>
-                    <img src="images/weather1.jpeg" alt="sunny day with a rainbow">
-                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/weather2.jpeg" alt="Sunny day">
-                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/weather3.jpeg" alt="lightning">
-                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/weather4.jpeg" alt="Rainy day">
-                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/weather5.jpeg" alt="Storm clouds">
-                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/weather6.jpeg" alt="man shoveling snow">
-                    <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
-                </figure>
-	           
-            </div>
-        </main>
 
-        <footer>
-            <aside>
-                <p>Weather Adventures</p>
-                <p>123 Main St.</p>
-                <p>Franklin, MU 83454</p>
-                <p>(999) 999-9999</p>
-                <p><a href="contact@theurl.com">contact@theurl.com</a></p>
-            </aside>
-                <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p><div id="clockDisplay" class="container"></div>
+    </nav>
 
-        </footer>
+    <main>
 
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/currentdate.js">
-        
-    </body>
- <script>
-    var urlString = document.location.href;
-    var urlArray = urlString.split('/');
-    var pageHREF = urlArray[urlArray.length-1];
-    
-    if (pageHREF !==""){
-        var menu= document.querySelectorAll('ul#mainmenu li a');
-        var i;
-        
-        for(i=0; i<menu.length; i++) {
-            var currentURL = (menu[i].getAttribute("href"));
-            menu[i].parentNode.className = "";
-            if (currentURL===pageHREF) {
-                menu[i].parentNode.className = "active";
+        <div id="grid">
+            <figure>
+                <img src="images/weather1.jpeg" alt="sunny day with a rainbow">
+                <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather2.jpeg" alt="Sunny day">
+                <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather3.jpeg" alt="lightning">
+                <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather4.jpeg" alt="Rainy day">
+                <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather5.jpeg" alt="Storm clouds">
+                <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
+            </figure>
+            <figure>
+                <img src="images/weather6.jpeg" alt="man shoveling snow">
+                <figcaption>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <aside>
+            <p>Weather Adventures</p>
+            <p>123 Main St.</p>
+            <p>Franklin, MU 83454</p>
+            <p>(999) 999-9999</p>
+            <p><a href="contact@theurl.com">contact@theurl.com</a></p>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Adventures | </p>
+        <div id="clockDisplay" class="container"></div>
+
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js">
+        < /body> <
+        script >
+            var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            var menu = document.querySelectorAll('ul#mainmenu li a');
+            var i;
+
+            for (i = 0; i < menu.length; i++) {
+                var currentURL = (menu[i].getAttribute("href"));
+                menu[i].parentNode.className = "";
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = "active";
+                }
             }
         }
-    }
     </script>
+
 </html>

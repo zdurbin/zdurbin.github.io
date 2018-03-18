@@ -46,7 +46,7 @@
         <section id="cityInfo">
         </section>
         <script>
-            var header = document.querySelector("header");
+                        var header = document.querySelector("header");
             var section = document.querySelector("section");
             var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
             var request = new XMLHttpRequest();
@@ -82,18 +82,22 @@
                 myPara1.textContent = "Year Founded: " + towns[1].yearFounded;
                 myPara2.textContent = "Current Population: " + towns[1].currentPopulation;
                 myPara3.textContent = "Average Rainfall: " + towns[1].averageRainfall;
-                myPara4.textContent = "Events: " + towns[01].events;
+                myPara4.textContent = "Events: ";
+                var events = towns[1].events;
+                    for (var j = 0; j < events.length; j++) {
+                    var listItem = document.createElement("li");
+                    listItem.textContent = events[j];
+                    myList.appendChild(listItem);
+                    }
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myH3);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
+                myArticle.appendChild(myList),
                 section.appendChild(myArticle);
-                //var listItem = document.createElement("li");
-                //listItem.textContent = events[j];
-                //myList.appendChild(listItem);
-
+                    
             }
         </script>
         <figure class="cityimage">
@@ -156,7 +160,7 @@
             </section>
         </div>
         <article>
-            <h2>Greenville set massive thunderstorms</h2>
+            <h2>Greenville set for massive thunderstorms</h2>
             <p class="town-article">
                 <img src="images/record1.jpg" alt="sunny day"></p>
             <h3 class="townh3">Meatoroligist predict heavy thunderstorms</h3>

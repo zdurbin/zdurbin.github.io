@@ -82,18 +82,22 @@
                 myPara1.textContent = "Year Founded: " + towns[3].yearFounded;
                 myPara2.textContent = "Current Population: " + towns[3].currentPopulation;
                 myPara3.textContent = "Average Rainfall: " + towns[3].averageRainfall;
-                myPara4.textContent = "Events: " + towns[3].events;
+                myPara4.textContent = "Events: ";
+                var events = towns[3].events;
+                    for (var j = 0; j < events.length; j++) {
+                    var listItem = document.createElement("li");
+                    listItem.textContent = events[j];
+                    myList.appendChild(listItem);
+                    }
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myH3);
                 myArticle.appendChild(myPara1);
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
+                myArticle.appendChild(myList),
                 section.appendChild(myArticle);
-                //var listItem = document.createElement("li");
-                //listItem.textContent = events[j];
-                //myList.appendChild(listItem);
-
+                    
             }
         </script>
         <figure class="cityimage">

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="327.29675mm"
+   height="184.04175mm"
+   viewBox="0 0 327.29675 184.04175"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8156">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8152" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8154" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8148">
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1;"
+         offset="0"
+         id="stop8144" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:0;"
+         offset="1"
+         id="stop8146" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient7958">
+      <stop
+         style="stop-color:#006200;stop-opacity:1;"
+         offset="0"
+         id="stop7954" />
+      <stop
+         style="stop-color:#006200;stop-opacity:0;"
+         offset="1"
+         id="stop7956" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6028"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#006200;stop-opacity:1;"
+         offset="0"
+         id="stop6026" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient7958"
+       id="linearGradient7960"
+       x1="-29.472893"
+       y1="41.801632"
+       x2="116.03752"
+       y2="41.801632"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter8130"
+       x="-0.032159999"
+       width="1.06432"
+       y="-0.040881358"
+       height="1.0817627">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.5194643"
+         id="feGaussianBlur8132" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8148"
+       id="linearGradient8150"
+       x1="23.416368"
+       y1="27.276196"
+       x2="144.10265"
+       y2="27.276196"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8156"
+       id="linearGradient8158"
+       x1="23.416368"
+       y1="27.276196"
+       x2="144.10265"
+       y2="27.276196"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="28.64286"
+     inkscape:cy="-289.04911"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       position="87.331398,66.397418"
+       orientation="0,1"
+       id="guide3757"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="137.9802,165.42718"
+       orientation="0,1"
+       id="guide6032"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="220.37901,99.659328"
+       orientation="0,1"
+       id="guide6034"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-66.12693,-34.144243"
+       orientation="0,1"
+       id="guide6084"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.3590762,8.9450394"
+       orientation="1,0"
+       id="guide6086"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="124.37306,-16.00139"
+       orientation="1,0"
+       id="guide6088"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="399.53973,8.1890894"
+       orientation="0,1"
+       id="guide6098"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="326.21234,99.659338"
+       orientation="1,0"
+       id="guide6100"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(26.099257,20.971706)">
+    <ellipse
+       style="opacity:1;fill:url(#linearGradient8150);fill-opacity:1;stroke:url(#linearGradient8158);stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter8130)"
+       id="path6106"
+       cx="83.759514"
+       cy="27.276197"
+       rx="56.69643"
+       ry="44.601189" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:127.89927673px;line-height:1.25;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;opacity:1;fill:#006200;fill-opacity:1;stroke:none;stroke-width:0.66614205"
+       x="-28.47368"
+       y="85.267403"
+       id="text3715"
+       transform="scale(0.88553425,1.1292618)"><tspan
+         sodipodi:role="line"
+         id="tspan3713"
+         x="-28.47368"
+         y="85.267403"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:127.89927673px;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1;stroke-width:0.66614205">M</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3717"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion3719"><rect
+           id="rect3721"
+           width="2.8571429"
+           height="108.57143"
+           x="100"
+           y="105.37683" /></flowRegion><flowPara
+         id="flowPara3723" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3725"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion3727"><rect
+           id="rect3729"
+           width="5.7142859"
+           height="117.14286"
+           x="237.14285"
+           y="-37.480316" /></flowRegion><flowPara
+         id="flowPara3731" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3733"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion3735"><rect
+           id="rect3737"
+           width="60"
+           height="168.57143"
+           x="177.14285"
+           y="113.94826" /></flowRegion><flowPara
+         id="flowPara3739" /></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3749"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;line-height:1.25;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006200;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.833931,21.620245)"><flowRegion
+         id="flowRegion3751"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1"><rect
+           id="rect3753"
+           width="771.42853"
+           height="228.57141"
+           x="422.85715"
+           y="105.37683"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1"
+           ry="5.7142859" /></flowRegion><flowPara
+         id="flowPara3755">ountain </flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot6090"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;line-height:1.25;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006200;fill-opacity:1;stroke:none"
+       transform="matrix(0.61613535,0,0,1.0556811,134.21168,-419.36757)"><flowRegion
+         id="flowRegion6092"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1"><rect
+           id="rect6094"
+           width="471.42856"
+           height="380"
+           x="-100"
+           y="365.37683"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara6096"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:75.57147217px;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1">S</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:48.30604935px;line-height:1.25;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006200;fill-opacity:1;stroke:none;stroke-width:0.25159398"
+       x="112.64225"
+       y="162.40807"
+       id="text6104"
+       transform="scale(1.0516281,0.9509065)"><tspan
+         sodipodi:role="line"
+         id="tspan6102"
+         x="112.64225"
+         y="162.40807"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1;stroke-width:0.25159398">poke</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8160"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-size:192px;line-height:1.25;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#006200;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,0,19.050006)"><flowRegion
+         id="flowRegion8162"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1"><rect
+           id="rect8164"
+           width="508.57144"
+           height="248.5714"
+           x="371.42856"
+           y="-8.9088726"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:semi-expanded;font-family:Magneto;-inkscape-font-specification:'Magneto Bold Semi-Expanded';text-align:start;text-anchor:start;fill:#006200;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara8166">The</flowPara></flowRoot>  </g>
+</svg>

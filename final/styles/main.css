@@ -1,0 +1,171 @@
+@media screen and (max-width: 640px) {
+
+    /*header*/
+
+    /*Navigation*/
+    nav button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #e7e7e7
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        flex: 1 1 0;
+        color: #621402;
+    }
+
+}
+
+/********** true for all ************/
+
+/*main*/
+
+body {
+    background-color: ;
+    max-width: ;
+    margin: auto;
+    font-family: ;
+    text-align: ;
+    color: ;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.heading {
+    flex: 2 1 0;
+    font-size: 5rem;
+    max-width: 75%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+.subheading {
+    color: #d7d7d7;
+    font-size: 1.5em;
+    font-style: italic;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-flow: nowrap;
+    flex: auto;
+    min-width: 100%;
+    margin-bottom: 20px
+}
+
+
+
+/*footer*/
+
+footer a {
+    color: #e7e7e7;
+}
+
+/*font style*/
+
+h1 {
+    font-size: 5em;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Jim Nightshade', cursive;
+    color: #d7d7d7;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+/*navigation*/
+
+nav {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav ul li {
+    background-color: #621402;
+    text-decoration: none;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: #e7e7e7;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*content*/
+
+
+
+/* non collapse code */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/********** Start ***********/
+
+
+
+/*********  End **************/
+
+/*********Storm *********/
+
+
+
+/*End */
+
+/************ Start  **************/
+
+
+
+/*End */
+
+/************ Start  **********/
+

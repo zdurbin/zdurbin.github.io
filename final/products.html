@@ -4,11 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>The Mountain Spoke - Products</title>
     <meta name="author" content="Zachery D. ~ Student">
-    <meta name="description" content="page description placeholder">
-    <!-- external style references in the proper cascading order -->
-
 
     <link href="styles/main.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
@@ -21,42 +18,38 @@
 <body onLoad="renderTime();">
     <header>
         <img src="images/logo.png" alt="The site logo">
-        <h1 class=""></h1>
-        <div class=""></div>
     </header>
 
-    <!-- site navigation use placeholder references -->
-    <nav class="">
-        <button onclick="toggleNavMenu()">&#9776; Menu</button>
-        <ul id="mainmenu" class="hide">
-            <li class="active"><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+    <nav>
+        <a class="burger-nav"></a>
+        <ul id="mainmenu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="repair.html">Repair</a></li>
+            <li><a href="parts.html">Parts</a></li>
+            <li><a href="tours.html">Tours</a></li>
         </ul>
 
     </nav>
 
     <main>
-        <section id="">
+        <section>
         </section>
-
+        
         <figure class="">
             <img src="" alt="">
         </figure>
         <div class="">
             <section class="">
-                
+
             </section>
 
-            
+
         </div>
         <article>
             <h2></h2>
             <p class="">
-                <img src="" alt=""></p>
+                <img src="#" alt=""></p>
             <h3 class=""></h3>
             <p>
             </p>
@@ -72,15 +65,34 @@
             <p></p>
             <p><a href="contact@theurl.com">contact@theurl.com</a></p>
         </aside>
-        <p class="footer-bar">&copy;2017 All Rights Reserved |  | </p>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | </p>
         <div id="clockDisplay" class="container"></div>
 
     </footer>
 
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/wu-weather.js"></script>
-    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script>
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            var menu = document.querySelectorAll('ul#mainmenu li a');
+            var i;
+
+            for (i = 0; i < menu.length; i++) {
+                var currentURL = (menu[i].getAttribute("href"));
+                menu[i].parentNode.className = "";
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = "active";
+                }
+            }
+        }
+    </script>
+
+
 
 </body>
 

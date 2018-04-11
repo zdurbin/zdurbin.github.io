@@ -3,17 +3,26 @@
     /*Navigation*/
     .burger-nav{
         display: block;
-        height: 30px;
-        background: url(../images/burger.png) no-repeat 98% center;
-        background-color: #80F2FC; 
+        height: 40px;
+        width: 120px; 
+        background: url(../images/burger.png) no-repeat 2% center;
+        background-color: #80F2FC;
         cursor: pointer; 
         color: crimson;
         font-size: 1.3em;
         text-align: left;
         padding-top:15px;
-        padding-left: 5px;
-        margin-top: 12px
+        margin-top: 12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 15px;
+        border: 2px solid black;
     }
+    .burger-nav:after{
+        content: "menu";
+        padding-left: 52px;
+        font-size: 1.2em;
+        color: black;
+        }
     
     nav ul{
         overflow: hidden;
@@ -21,6 +30,7 @@
         flex-direction: column;
         padding-left: 5px; 
         margin-top:0;
+        
     }
     
    nav ul.open{
@@ -37,6 +47,10 @@
     
     nav ul li a{ 
         border-bottom: 1px solid black;  
+    }
+    
+    .center{
+        text-align: center;
     }
 
 }
@@ -98,7 +112,28 @@ footer a{
 
 /*****home page*****/
 
-.banner{
-    display: flex;
-    align-content: center;
+article{
+    border: 3px solid black;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 0;        
 }
+
+article ul li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+}
+
+.button{
+    margin-bottom: 10px;
+    margin-top: 0;
+    background-color: #80F2FC;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+

@@ -1,56 +1,68 @@
 @media screen and (max-width: 500px) {
 
     /*Navigation*/
-    .burger-nav{
+    .burger-nav {
         display: block;
         height: 40px;
-        width: 120px; 
+        width: 120px;
         background: url(../images/burger.png) no-repeat 2% center;
         background-color: #80F2FC;
-        cursor: pointer; 
+        cursor: pointer;
         color: crimson;
         font-size: 1.3em;
         text-align: left;
-        padding-top:15px;
+        padding-top: 15px;
         margin-top: 12px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 15px;
         border: 2px solid black;
     }
-    .burger-nav:after{
+    .burger-nav:after {
         content: "menu";
         padding-left: 52px;
         font-size: 1.2em;
         color: black;
-        }
-    
-    nav ul{
+    }
+
+    nav ul {
         overflow: hidden;
         height: 0;
         flex-direction: column;
-        padding-left: 5px; 
-        margin-top:0;
-        
+        padding-left: 5px;
+        margin-top: 0;
+
     }
-    
-   nav ul.open{
+
+    nav ul.open {
         height: auto;
     }
-    
-    nav ul li{
+
+    nav ul li {
         text-align: left;
         width: 100%;
         margin: 0;
         padding: 0;
         border-bottom: 1.5px solid black;
     }
-    
-    nav ul li a{ 
-        border-bottom: 1px solid black;  
+
+    nav ul li a {
+        border-bottom: 1px solid black;
+    }
+
+    .center {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
     
-    .center{
+    h1, h2, h3, h4, h5, h6{
         text-align: center;
+        font-weight: bold;
+        font-style: normal;
+        
     }
 
 }
@@ -67,64 +79,68 @@ body {
     text-align: left;
     color: black;
     font-size: 1.3em;
-    
+
 }
 
 /*header*/
-header img{
+
+header img {
     margin: 1%;
     padding: 1%;
 }
+
 /*nav*/
 
-nav ul{
+nav ul {
     list-style-type: none;
     background-color: #80F2FC;
     display: flex;
     text-align: center;
 }
 
-nav ul li{
+nav ul li {
     width: 100%;
     color: black;
     font-size: 1.5em;
     font: magneto;
 }
 
-nav ul li a{
+nav ul li a {
     color: black;
     text-decoration: none;
     font-style: italic;
     font-family: magneto;
 }
 
-nav ul li.active{
+nav ul li.active {
     background-color: rgba(0, 0, 0, .2);
 }
+
 /*footer*/
-    
-footer{
+
+footer {
     text-align: center;
 }
-footer a{
+
+footer a {
     color: black;
 }
 
 /*****home page*****/
 
-article{
+article {
     border: 3px solid black;
     margin: 5px;
     padding: 5px;
-    padding-left: 0;        
+    padding-left: 0;
 }
 
-article ul li{
+article ul li {
     list-style-type: none;
     border-bottom: 1px solid black;
 }
 
-.button{
+.button {
     margin-bottom: 10px;
     margin-top: 0;
     background-color: #80F2FC;
@@ -134,6 +150,120 @@ article ul li{
     border-radius: 15px;
     padding: 5px;
     border: 2px solid black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+footer{
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+/**** Events Page ****/
+.divide{
+    width: 99%;
+    padding: 0 5px;
+}
+
+/**** Contact Page ****/
+
+form #contact {
+    margin: 1em 3%;
+    margin: 0;
+    padding: 5px;
+}
+
+fieldset {
+    box-shadow: 4px 4px 10px black;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: .8em;
+    margin: 1.5em .2em;
+    border: #e7e7e7 solid 2px;
+    text-align: left;
+}
+
+legend {
+    color: #e7e7e7;
+    margin-left: 6%;
+    padding: .5em;
+    border: #e7e7e7 solid 1px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: .4em;
+    font-style: italic;
+    font-size: 1.2em;
+    box-shadow: 4px 4px 10px black;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: 1.2em;
+    color: #e7e7e7;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+.submitbutton {
+    display: block;
+    color: #e7e7e7;
+    background-color: rgba(0, 0, 0, .3);
+    border: #e7e7e7 solid 1px;
+    border-radius: 7px;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .3em;
+    box-shadow: 4px 4px 10px black;
+}
+
+label input {
+    background-color: #f4f2ef;
+    padding: .3em .3em .3em 2em;
+    border: #921405 solid 3px;
+    border-radius: 5px;
+    font-size: .9em;
+    width: 90%;
+    max-width: 500px;
+    background-image: url(../images/ico_validation.png);
+    background-repeat: no-repeat;
+    background-position: 4px -11px;
+    box-shadow: 4px 4px 10px black;
+    padding-right: 0;
+    
+}
+
+input:focus {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5) inset;
+}
+
+input:required {
+    background-position: 4px -61px;
+}
+
+input:focus:invalid {
+    background-position: 4px -111px;
+}
+
+input:focus:valid {
+    background-color: #ffffff;
+    background-position: 4px -161px;
+}
+
+textarea {
+    min-height: 100px;
+    width: 90%;
+    margin-left: .5em;
+    box-shadow: 4px 4px 10px black;
+    border: #921405 solid 3px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+address{
+    margin-top: 30px;
+    text-align: center;
+    font-style: normal;
+    font-size: 1.05em;
+}

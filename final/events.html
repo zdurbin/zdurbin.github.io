@@ -41,6 +41,30 @@
             <p>
             </p>
         </article>
+        <form action="thanks.html" method="get" enctype="multipart/form-data" name="storm" id="report">
+            <fieldset>
+                <legend><span>Registration Information</span></legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required ></label>
+                <label><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@carrier.com" required></label>
+                <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="1235556785" pattern="[0-9]{10,20}" required></label>
+                <label><span>Birth Date:</span><input name="birthdate" type="number" value="" placeholder="01/01/2000" pattern="[a-zA-Z -._/]{5,99}" required></label>
+                <label><span>Street Address:</span><input name="streetaddress" type="text" value="" placeholder="123 Main St" pattern="[a-zA-Z -._]{5,99}" required ></label>
+                <label><span>City:</span><input name="city" type="text" value="" placeholder="Bozeman" required></label>
+                <label><span>State/country:</span><input name="state" type="text" value="" placeholder="Mt" pattern="[0-9]{10,20}" required></label>
+                <label><span>Zipcode:</span><input name="zipcode" type="number" value="" placeholder="12345" pattern="[0-9]{5,99}" required></label>
+
+                <label><span>Special accomommodations or comments:</span></label>
+                <textarea placeholder="Special accomommodations/comments"></textarea>
+            </fieldset>
+
+
+            <input type="submit" value="Submit registration Info" class="submitbutton">
+
+            <input type="hidden" value="Regional User Reported Weather" name="subject">
+            <input name="redirect" type="hidden" value="http://zdurbin.github.io/Assignments/Lesson8/thanks.html">
+
+
+        </form>
 
     </main>
 

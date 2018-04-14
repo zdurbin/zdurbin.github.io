@@ -71,6 +71,12 @@
         font-style: normal;
         
     }
+    
+    .bikes{
+        width: 93%;
+    }
+    
+    
 
 }
 
@@ -173,6 +179,38 @@ footer{
 .divide{
     width: 99%;
     padding: 0 5px;
+}
+
+/**** Sales page ****/
+ul{
+    list-style: none;
+}
+
+.name{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 800;
+}
+
+.cost{
+    font-weight: 600;
+}
+
+/**** Service page ****/
+table{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+th{
+    background-color: rgba(0, 0, 0, .2);
+    padding: 5px;
+    font-size: 1.1em;
 }
 
 /**** Contact Page ****/
